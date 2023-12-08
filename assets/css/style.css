@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
+:root{
+    --primary_clr:#f6931e;
+    --secondary_clr:#666666;
+    --primary_clr_opacity:#f6951ec9;
+}
+*{
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.section-2,.section-3,.section-4,.section-5,.section-6,.section-7,.section-8,.section-9,.section-10{
+    padding: 50px 0;
+}
+h2.h2{
+    color: var(--primary_clr);
+        text-align: center;
+        font-weight: 600;
+        text-transform: capitalize;
+}
+p.p{
+    color: var(--secondary_clr);
+}
+
+/*..........................header........................*/
+@media screen and (min-width:980px) {
+    #image-height{
+        height: 690px !important;
+    }
+}
+
+header{
+    .quick-cnct-nav{
+        height: 30px;
+        width: 100%;
+        overflow: hidden;
+        background-color: var(--primary_clr);
+        color: white;
+    }
+    .quick-cnct-nav .row{
+        height: 100%;
+    }
+    .quick-cnct-nav .col-md-6{
+        justify-content: space-evenly;
+        display: flex
+    }
+    .quick-cnct-nav .span{
+        align-items: center;
+        display: flex;
+    }
+    .quick-cnct-nav .a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .navbar .dropdown-item{    /*navbar*/
+        text-transform: capitalize;
+    }
+    .sticky-top{
+        top: -1px !important;
+    }
+    .navbar .nav-log{
+        height: 50px;
+    }
+    .nav-item{
+        font-weight: 700;
+    }
+    .nav-link:hover {
+        color: black;
+    }
+    .dropdown-item:hover{
+        font-weight: 600;
+    }
+
+    @media screen and (min-width: 992px){
+        .navbar{
+            height: 80px;
+        }
+        .navbar-expand-lg .navbar-collapse {
+            flex-direction: row-reverse !important;
+        }
+        .navbar-expand-lg .navbar-nav {
+            width: 50%;
+            justify-content: center;
+        }
+        .dropdown-toggle:hover + .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu:hover{
+            display: block;
+        }
+
+        .header-slider {/*slider*/
+            height: 650px;
+        }
+        .slider-item{
+            height: 650px !important;
+        }
+        
+    }
+
+    .header-slider {/*slider*/
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0 !important;
+      }
+      .slider-item {
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .slider-item img {
+        max-width: 100%;
+        height: auto;
+      }
+      .slider-caption {
+        position: absolute;
+        text-align: center;
+        color: var(--primary_clr);
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 0 0 6px #080707;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .slider-caption .caption-p{
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .slick-current .slider-caption {
+        opacity: 1;
+      }
+      @media screen and (max-width:700px) {
+        .slider-caption{
+            font-size: 35px;
+            padding: 70px 0 20px;
+        }
+        .slider-caption .caption-p{
+            font-size: 25px;
+            padding: 0 20px;
+        }
+        .slider-item img {
+            max-width: max-content;
+            height: 650px;
+          }
+      }
+}
+/*.......................................................   header END   ...........................................................*/
+
+/*.......................... Section-1 / news ........................*/
+.section-1{
+    color: var(--primary_clr);
+    padding: 30px;
+}
+    .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+      }
+  
+      .marquee {
+        display: inline-block;
+        animation: marqueeAnimation 15s linear infinite;
+      }
+  
+      @keyframes marqueeAnimation {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+/*.......................................................   Section-1 / news END   ...........................................................*/
+
+/*.......................... section-2 ........................*/
+
+.section-2{
+    .col-md-6{
+        align-items: center;
+        display: flex;
+    }
+    .cnt .p{
+        color: var(--secondary_clr);
+    }
+    .cnt .mre-abt{
+        color: var(--primary_clr);
+    }
+    .cnt .mre-abt-btn{
+        color: var(--secondary_clr);
+        text-decoration: none;
+        transition: 0.4s;
+    }
+    .cnt .mre-abt-btn:hover{
+        color: var(--primary_clr);
+        padding-left: 10px;
+    }
+    
+
+
+    .col-md-6:nth-child(2){
+        justify-content: center;
+    }
+
+    .row:nth-child(2){
+        padding-top: 10px;
+    }
+    .col-md-4{/*number count part*/
+        text-align: center;
+    }
+    .head{
+        font-weight: bold;
+        color: var(--primary_clr);
+    }
+    .dlls{
+        color: var(--secondary_clr);
+        text-transform: capitalize;
+    }
+
+    @media screen and (max-width:700px) {
+        .col-md-6:nth-child(2){
+            display: none;
+        }
+        .col-md-4{
+            margin-bottom: 30px;
+        }
+        .row:nth-child(1){
+            margin-bottom: 30px;
+        }
+        
+    }
+}
+/*.......................................................   section-2 END   ...........................................................*/
+
+/*.......................... section-3 ........................*/
+.section-3{
+    .row{
+        justify-content: center;
+    }
+
+    .card{
+        border: 0;
+        margin-bottom: 20px;
+    }
+    .card .img-div{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .card-img-top{
+        transition: 0.5s;
+    }
+    .img-overlay{
+        background: #eeeeee;
+        opacity: 50%;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        transition: 0.4s;
+        top: 250px;
+    }
+    .img-div:hover .img-overlay{
+        transform: translateY(-250px);
+    }
+    .img-div:hover .card-img-top{
+        transform: scale(1.1);
+    }
+
+    .card-title{
+        text-transform: uppercase;
+        transition: 0.4s;
+    }
+    .img-div:hover + .card-body h5.card-title {
+        color: var(--primary_clr);
+        padding-left: 10px;
+      }
+      @media screen and (max-width:1024px) {
+        .card .img-div{
+            height: 190px;
+        }
+      }
+      @media screen and (max-width:600px) {
+        .card .img-div{
+            height: 220px;
+        }
+      }
+      @media screen and (max-width:352px) {
+        .card .img-div{
+            height: 196px;
+        }
+      }
+}
+
+/*.......................................................   section-3 END   ...........................................................*/
+
+/*.......................... section-4 ........................*/
+.section-4{
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .active, .accordion:hover {
+        background-color: var(--primary_clr);
+        color: white;
+      }
+      
+      .accordion:after {
+        content: '\002B';
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .p{
+        padding-top: 10px;
+        color: var(--secondary_clr);
+      }
+}
+/*.......................................................   section-4 END   ...........................................................*/
+
+/*.......................... section-5 ........................*/
+.section-5{
+    .client-slider{
+        cursor: pointer;
+    }
+    .client-slider .image{
+        height: 100px;
+    }
+}
+/*.......................................................   section-5 END   ...........................................................*/
+
+
+
+/*.......................... footer ........................*/
+footer a{
+    text-decoration: none;
+}
+
+.scil-mdia-div a i{
+    font-size: 20px;
+}
+.text-md-start a,.scil-mdia-div a i{
+    transition: 0.4s;
+}
+.scil-mdia-div a i:hover{
+    transform: translateY(-5px);
+}
+.text-md-start a:hover{
+    padding-left: 6px;
+}
+@media screen and (max-width:700px) {
+    .text-md-start{
+        text-align: left !important;
+    }
+}
+
+/*.......................... paste_here ........................*/
+/*.......................................................   paste_here END   ...........................................................*/
